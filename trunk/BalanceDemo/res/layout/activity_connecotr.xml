@@ -1,0 +1,68 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    tools:context=".BasicWeighing" 
+    >
+	<TableRow>
+	    <TextView
+	        android:id="@+id/tv_ip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ip_address" />		
+		<EditText
+	        android:id="@+id/et_ip"
+	        android:layout_width="wrap_content"
+	       	android:layout_height="wrap_content"
+	       	android:hint="@string/input_ip"
+	   		android:selectAllOnFocus="true" />
+	 </TableRow>
+	 <TableRow>
+	    <TextView
+	        android:id="@+id/tv_port"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/port_address" />
+	    
+	    <EditText
+	        android:id="@+id/et_port"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/input_port"
+	        android:inputType="numberDecimal"
+	        android:selectAllOnFocus="true" />
+	    
+	</TableRow>
+	<TableRow>
+	    <Button android:id="@+id/bn_connect"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/connect" />
+	    <TextView android:id="@+id/tv_message"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="" />	    
+	</TableRow>
+	
+	<RadioGroup android:orientation="vertical" >
+
+	    <RadioButton
+		    android:id="@+id/radio_basicweighing"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/radio_basicweighing" />
+
+		<RadioButton
+		    android:id="@+id/radio_levelingbubble"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/radio_levelbubble" />
+	</RadioGroup>
+	
+	<Button android:id="@+id/bn_activate_manual_act"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/view_manuals" />
+
+</TableLayout>

@@ -1,0 +1,55 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DownloadManual" >
+
+	<TextView
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:text="Download from URL："
+	/>
+	<EditText
+		android:id="@+id/url"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:inputType="text"
+	/>
+	<TextView
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:text="Target File："
+		/>
+	<EditText
+		android:id="@+id/target"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:inputType="text"
+		/>	
+	<Button
+		android:id="@+id/down"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:text="Download"
+		/>
+	<!-- Progress bar to show download progress -->
+	<ProgressBar
+		android:id="@+id/bar"
+	 	android:layout_width="fill_parent"
+	 	android:layout_height="wrap_content"
+		android:max="100"
+		style="@android:style/Widget.ProgressBar.Horizontal"
+		/>	 
+	<Button
+		android:id="@+id/view"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:text="View"
+		/>
+
+</TableLayout>
+
